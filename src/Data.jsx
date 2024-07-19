@@ -4,9 +4,6 @@ import {
 
 
 
-
-
-
 // 
 const NavTexts = {
     LogoText: "Fresh Bread",
