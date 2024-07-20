@@ -4,7 +4,7 @@ import OurBreadSectionCardImageTwo from './images/card2.jpg'
 import OurBreadSectionCardImageThree from './images/card3.jpg'
 import OurBreadSectionCardImageFour from './images/card4.jpg'
 import OurBreadSectionBackgroundImage from './images/card7.jpg'
-import IngredientsAndMethodsImage from './images/lado.jpg'
+import IngredientsAndMethodsImage from './images/bg-hand-bread.png'
 import OurBreadSection2BackgroundImage from  './images/basketBread.jpg'
 import ReviewSectionBackgroundImage from './images/BreadOntable.jpg'
 

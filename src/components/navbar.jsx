@@ -7,7 +7,7 @@ function Navbar() {
     const { LogoText, NavLinksText } = useContext(NavTextsData)
     return (
         <div>
-            <div className="h-[70px] w-full bg-slate-200 flex flex-row justify-between items-center pr-[40px] pl-[17px] fixed top-0">
+            <div className="h-[70px] w-full bg-slate-200 flex flex-row justify-between items-center pr-[40px] pl-[17px] fixed top-0 z-50">
                 <div>
                     <a href="/" className="text-[2rem] font-[500] hover:text-orange-600 ">
                         {LogoText}
@@ -51,7 +51,7 @@ function Navbar() {
             </div>
             <div
                 className={` hidden ${NavShowModal ? "phone:block tablet:block" : "phone:hidden tablet:hidden"
-                    } phone:h-[230px] phone:w-full phone:bg-slate-300 phone:border-t-[4px] border-white p-[20px] tablet:h-[250px] tablet:w-full tablet: bg-slate-300 fixed phone:top-[9%] tablet:top-[7%]`}
+                    } z-50 phone:h-[230px] phone:w-full phone:bg-slate-300 phone:border-t-[4px] border-white p-[20px] tablet:h-[250px] tablet:w-full tablet: bg-slate-300 fixed phone:top-[9%] tablet:top-[7%]`}
             >
                 <ul className="nav-li-hover flex flex-col gap-4 justify-between text-[20px] font-[500]">
                     <li className="">
