@@ -24,9 +24,9 @@ function OurMenu() {
         <div className="h-[600px] w-full relative phone:h-[1700px] tablet:h-[900px]">
             <img src={BackgroundImage} alt="Background image" className='h-full w-full object-cover ' />
             <div className='absolute top-0 left-0 bg-[rgba(0,0,0,0.6)] mb-5 h-full w-full'>
-                <h1 className='text-white text-center font-[600] text-[50px]'>{Title}</h1>
+                <h1 className='text-white text-center font-[600] text-[50px] mt-6'>{Title}</h1>
                 <div className='flex justify-center items-center'>
-                <div className='grid grid-cols-4 p-5 gap-7 phone:grid-cols-1 phone:gap-4 tablet:grid-cols-2'>
+                <div className='grid grid-cols-4 p-5 gap-7 phone:grid-cols-1 phone:gap-4 tablet:grid-cols-2 mt-3'>
                     {CardData.map((data, index) => {
                         return (
                             <BreadCard data={data} key={index}/>

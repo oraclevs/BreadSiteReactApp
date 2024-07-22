@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "main-bg": "#F6F5F8",
+        "dark-cover": "rgba(0,0,0,0.7)",
+        "dark-cover-light": "rgba(0,0,0,0.6)",
+        "review-card": "#F2952D",
+      },
+    },
     screens: {
       large: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
