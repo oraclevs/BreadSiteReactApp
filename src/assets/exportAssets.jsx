@@ -7,8 +7,9 @@ import OurBreadSectionBackgroundImage from './images/card7.jpg'
 import IngredientsAndMethodsImage from './images/bg-hand-bread.png'
 import OurBreadSection2BackgroundImage from  './images/basketBread.jpg'
 import ReviewSectionBackgroundImage from './images/BreadOntable.jpg'
+import ContactUsBackgroundImage from './images/lado.jpg'
 
 
 export {
-    RightBread, OurBreadSectionCardImageTwo, OurBreadSectionCardImageThree, OurBreadSectionCardImageFour, OurBreadSectionCardImageOne, OurBreadSectionBackgroundImage, IngredientsAndMethodsImage, OurBreadSection2BackgroundImage, ReviewSectionBackgroundImage
+    RightBread, OurBreadSectionCardImageTwo, OurBreadSectionCardImageThree, OurBreadSectionCardImageFour, OurBreadSectionCardImageOne, OurBreadSectionBackgroundImage, IngredientsAndMethodsImage, OurBreadSection2BackgroundImage, ReviewSectionBackgroundImage, ContactUsBackgroundImage
 }

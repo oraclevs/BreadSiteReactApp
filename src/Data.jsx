@@ -1,5 +1,5 @@
 import {
-    RightBread, OurBreadSectionCardImageTwo, OurBreadSectionCardImageThree, OurBreadSectionCardImageFour, OurBreadSectionCardImageOne, OurBreadSectionBackgroundImage, IngredientsAndMethodsImage, OurBreadSection2BackgroundImage, ReviewSectionBackgroundImage
+    RightBread, OurBreadSectionCardImageTwo, OurBreadSectionCardImageThree, OurBreadSectionCardImageFour, OurBreadSectionCardImageOne, OurBreadSectionBackgroundImage, IngredientsAndMethodsImage, OurBreadSection2BackgroundImage, ReviewSectionBackgroundImage, ContactUsBackgroundImage
 } from "./assets/exportAssets"
 
 
@@ -130,7 +130,8 @@ const ReviewSection = {
 
 const ContactUs = {
     Title: "Contact Us",
-    Address: "121 Rock Sreet, 21 Avenue, New York, NY 92103-9000",
+    Address: "121 Rock Street, 21 Avenue, New York, NY 92103-9000",
+    BackgroundImage: ContactUsBackgroundImage,
     Hours: [
         {
             Day: "Monday – Saturday",

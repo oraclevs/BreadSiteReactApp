@@ -7,6 +7,7 @@ export default {
         "main-bg": "#F6F5F8",
         "dark-cover": "rgba(0,0,0,0.7)",
         "dark-cover-light": "rgba(0,0,0,0.6)",
+        "dark-cover-200": "rgba(0,0,0,0.4)",
         "review-card": "#F2952D",
       },
     },

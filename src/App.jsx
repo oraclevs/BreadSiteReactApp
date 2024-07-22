@@ -1,22 +1,38 @@
 
 import './App.css'
-import Navbar from './components/navbar'
-import HeroSection from './components/hero'
-import OurMenu from './components/OurMenu'
-import IngredientsAndMethods from './components/ingredientsAndMethods'
-import OurBread from './components/Ourbread'
-import CustomerReview from './components/CustomerReview'
+import Home from './pages/Home'
+import About from './pages/About'
+import ContactPage from './pages/Contactpage'
+import MenuPage from './pages/Menupage'
+import { Route,Routes } from 'react-router-dom'
+import NotFoundPage from './pages/NotFoundPage404'
+
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <OurMenu />
-      <IngredientsAndMethods />
-      <OurBread />
-      <CustomerReview />
+      <Routes>
+        <Route path='/'
+          element={<Home />}
+        />
+        <Route
+          path='/about'
+          element={<About/>}
+        />
+        <Route
+          path='/menu'
+          element={<MenuPage />}
+        />
+        <Route
+          path='/contact'
+          element={<ContactPage />}
+        />
+        <Route
+          path="*"
+          element={<NotFoundPage/>}
+        />
+     </Routes>
     </>
   )
 }
