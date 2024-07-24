@@ -4,18 +4,21 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    https: {
-      key: "cert.key",
-      cert: "cert.crt",
-    },
-  },
+  // server: {
+  //   https: {
+  //     key: "cert.key",
+  //     cert: "cert.crt",
+  //   },
+  // },
 
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: "auto",
+      devOptions: {
+        enabled: true,
+      },
       manifest: {
         name: "BreadApp",
         short_name: "BreadApp",
@@ -57,7 +60,7 @@ export default defineConfig({
           "**/*.{js,css,html,ico,png,svg,jpeg}",
           "**/assets/**.{png,jpeg,jpg}",
         ],
-        maximumFileSizeToCacheInBytes: 50000000,// 50mb max cache size
+        maximumFileSizeToCacheInBytes: 50000000, // 50mb max cache size
         cleanupOutdatedCaches: true,
       },
     }),
