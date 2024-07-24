@@ -4,18 +4,19 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // server: {
-  //   https: {
-  //     key: "cert.key",
-  //     cert: "cert.crt",
-  //   },
-  // },
+  server: {
+    https: {
+      key: "key/cert.key",
+      cert: "key/cert.crt",
+    },
+  },
 
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: "auto",
+      includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       devOptions: {
         enabled: true,
       },
@@ -24,25 +25,25 @@ export default defineConfig({
         short_name: "BreadApp",
         icons: [
           {
-            src: "public/favicon-assets/pwa-192x192.png",
+            src: "favicon-assets/pwa-192x192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "any",
           },
           {
-            src: "public/favicon-assets/pwa-512x512.png",
+            src: "favicon-assets/pwa-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any",
           },
           {
-            src: "public/favicon-assets/pwa-maskable-192x192.png",
+            src: "favicon-assets/pwa-maskable-192x192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "maskable",
           },
           {
-            src: "public/favicon-assets/pwa-maskable-512x512.png",
+            src: "favicon-assets/pwa-maskable-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
