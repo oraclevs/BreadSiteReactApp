@@ -8,4 +8,3 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-“start”: “set HTTPS=true&&set SSL_CRT_FILE=C:\Users\HP\keyx\ca.crt&&set SSL_KEY_FILE=C:/Windows/System32/ca.key&&react-scripts start”,
