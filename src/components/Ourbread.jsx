@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 const OurBreadCard = ({ Data }) => {
     const { Title, Description } = Data
     return (
-        <div className='h-[180px] w-[360px]  bg-dark-cover text-white  rounded-[10px] pt-8 pl-8'>
+        <div className='h-[180px] w-[360px] phone:w-[350px]  bg-dark-cover text-white  rounded-[10px] pt-8 pl-8'>
             <h2>{Title}</h2>
             <p>{Description}</p>
         </div>
@@ -26,7 +26,7 @@ OurBreadCard.propTypes = {
 const OurBread = () => {
     const { Title, BackgroundImage, CardData } = useContext(OurBreadSection2Data)
     return (
-        <div className="h-[auto] w-full relative   overflow-hidden ">
+        <div className="h-[auto] w-full relative   overflow-hidden phone:h-[1950px] ">
             <img src={BackgroundImage} alt="" className='h-full w-full' />
             <div className='absolute h-full w-full bg-transparent top-0 left-0'>
                 <motion.div
@@ -37,7 +37,7 @@ const OurBread = () => {
                     <h1 className='text-white font-bold text-[50px] text-center mt-10 mb-7'  >{Title}</h1>
                 </motion.div>
                 <div className='flex justify-center items-center h-auto w-full'>
-                    <motion.div className='grid grid-cols-3 gap-4 w-[1100px] h-[auto] pb-8 '
+                    <motion.div className='grid grid-cols-3 gap-4 w-[1100px] h-[auto] pb-8  phone:grid-cols-1'
                         whileInView={{ y: -5 }}
                         transition={{ ease: 'easeIn',duration:0.6 }}
                         initial={{y:290}}

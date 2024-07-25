@@ -1,6 +1,6 @@
 import {
     RightBread, OurBreadSectionCardImageTwo, OurBreadSectionCardImageThree, OurBreadSectionCardImageFour, OurBreadSectionCardImageOne, OurBreadSectionBackgroundImage, IngredientsAndMethodsImage, OurBreadSection2BackgroundImage, ReviewSectionBackgroundImage, ContactUsBackgroundImage
-} from "../public/assets/exportAssets"
+} from "./assets/exportAssets"
 
 
 
